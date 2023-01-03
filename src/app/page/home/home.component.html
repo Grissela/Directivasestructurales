@@ -1,0 +1,17 @@
+<div class="check">
+    <input type="checkbox" [(ngModel)]="checkBox" class="required:border-red-500" />  
+</div>
+
+<div class="mt-10  bg-slate-400 w-80" *ngIf="checkBox else mostrar">
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt=""></div>
+    <div class="p-6 bg-white">
+        <h3 class="my-3 text-2xl">Angular</h3>
+        <p class="text-slate-500 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, blanditiis sapiente. Necessitatibus, laboriosam! Eius hic pariatur culpa, facilis aspernatur adipisci est fugit fuga minus, quo voluptatibus cumque fugiat dolor eligendi.</p>
+    </div>
+</div>
+
+<ng-template #mostrar>
+    <p>Activa el checkBox para mostrar el contenido</p>
+</ng-template>
+
