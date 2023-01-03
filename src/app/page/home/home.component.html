@@ -1,9 +1,9 @@
-<h1>ACTIVIDAD 9</h1>
-<div class="check">
+<h1 class="p-6 bg-slate-400 text-white text-center mt-6 mr-3 ml-3">ACTIVIDAD 9</h1>
+<div class="check w-3/4 mx-auto">
     <input type="checkbox" [(ngModel)]="checkBox" class="required:border-red-500" />  
 </div>
 
-<div class="mt-10  bg-slate-400 w-80" *ngIf="checkBox else mostrar">
+<div class="mt-10  bg-slate-400 w-80 w-3/4 mx-auto" *ngIf="checkBox else mostrar">
     <div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" alt=""></div>
     <div class="p-6 bg-white">
@@ -13,6 +13,6 @@
 </div>
 
 <ng-template #mostrar>
-    <p>Activa el checkBox para mostrar el contenido</p>
+    <p class="w-3/4 mx-auto">Activa el checkBox para mostrar el contenido</p>
 </ng-template>
 
